@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const randomUtils_1 = require("./randomUtils");
+const sortUtils_1 = require("./sortUtils");
+const randomNumbers = (0, randomUtils_1.generateUniqueRandomNumbers)(5);
+const sortedArrayAsc = [...randomNumbers].sort(sortUtils_1.sortAscending);
+const sortedArrayDesc = [...randomNumbers].sort(sortUtils_1.sortDescending);
+console.log("Números aleatórios:", randomNumbers);
+console.log("Números ordenados (crescente):", sortedArrayAsc);
+console.log("Números ordenados (decrescente):", sortedArrayDesc);
